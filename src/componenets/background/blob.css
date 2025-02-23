@@ -1,0 +1,10 @@
+.blob-container{
+    position: absolute;
+}
+
+.blob {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
