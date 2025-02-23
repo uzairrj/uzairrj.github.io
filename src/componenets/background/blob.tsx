@@ -25,7 +25,7 @@ function Blob({blobs, top, left, bottom, right}: BlobProps) {
                     const translateX = useTransform(time, t => Math.sin(t/((1000 + randomNumber * 400) + (randomNumber * Math.PI * 2 ))) * (20 + (randomNumber * 50)))
                     const translateY = useTransform(time, t => Math.cos(t/(1000 + randomNumber * 400) ) + (randomNumber * Math.PI * 2 ) * (20+(randomNumber * 30)));
                     return (
-                        <motion.div key={index} className="blob" style={{...blob.style, rotate ,x:translateX, y:translateY}} />
+                        <motion.div key={index} className="blob" style={{...blob.style, rotate ,x:translateX, y:translateY, transformOrigin: `${45 + (randomNumber * 10)}% ${45 + (randomNumber * 10)}%`}} />
                     )
                 })}
         </div>
