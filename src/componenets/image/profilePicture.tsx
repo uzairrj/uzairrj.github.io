@@ -6,7 +6,7 @@ type PrimaryPictureProps = {
 
 function ProfilePicture({imgUri}:PrimaryPictureProps){
     return (
-        <div>
+        <div className='profile-image-container'>
             <img src={imgUri}  className='profileImage'/>
         </div> 
     )
