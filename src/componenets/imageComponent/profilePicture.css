@@ -1,0 +1,13 @@
+.profile-image-container {
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3.5px white solid;
+    background-color: black;
+}
+
+.profileImage {
+    display: block;
+    width: 25vh;
+    height: 25vh;
+    transform: translateY(40px);
+}

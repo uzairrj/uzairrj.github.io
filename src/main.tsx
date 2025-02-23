@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import {Blob} from './componenets/background/blob'
+import App from './App'
 
 const blobGroup1 = [
   {
@@ -57,7 +58,7 @@ createRoot(document.getElementById('root')!).render(
         <Blob blobs={blobGroup3} right={'55vh'} top={'0vw'}/>
       </div>
       <div className="content">
-        <h1 className="title">Blobby Background</h1>
+        <App />
       </div>
     </>
   </StrictMode>,
