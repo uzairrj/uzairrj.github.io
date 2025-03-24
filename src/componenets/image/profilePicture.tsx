@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import './profilePicture.css'
 
 type PrimaryPictureProps = {
@@ -5,9 +6,11 @@ type PrimaryPictureProps = {
 }
 
 function ProfilePicture({imgUri}:PrimaryPictureProps){
+    useEffect   (()=>{
+        console.log(imgUri)})
     return (
-        <div className='profile-image-container'>
-            <img src={imgUri}  className='profileImage'/>
+        <div className="profile-image-container">
+            <img src={imgUri} className='profile-image' alt='profile'/>
         </div> 
     )
 }
