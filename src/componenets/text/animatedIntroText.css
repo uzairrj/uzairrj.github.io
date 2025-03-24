@@ -1,2 +1,10 @@
-.text-container {
+.text-container p{
+    text-align: center;
+    font-size: clamp(1rem, 2vw, 3rem);
+}
+
+.animated-word {
+color: #8656ff;
+font-variant-caps: titling-caps;
+text-decoration: underline dotted;
 }
