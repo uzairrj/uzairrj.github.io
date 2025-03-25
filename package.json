@@ -12,6 +12,11 @@
     "predeploy": "npm run build"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
+    "@fortawesome/free-regular-svg-icons": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "motion": "^12.4.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
