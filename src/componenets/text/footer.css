@@ -1,0 +1,23 @@
+.footer{
+   position:absolute;
+   bottom:0px;
+   padding: 0px;
+   margin: 0px;
+}
+
+.footer p {
+    text-align: center;
+    font-size: clamp(0.8rem, 0.8vw, 3rem);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0px;
+    line-height: 0;
+}
+
+.source-code {
+    text-decoration: underline;
+    display: inline-block;
+}
+
+.source-code:hover {
+    cursor: pointer;
+}
