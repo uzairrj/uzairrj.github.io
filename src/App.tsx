@@ -1,6 +1,7 @@
 import './App.css'
 import ProfilePicture from './componenets/image/profilePicture'
 import AnimatedIntroText from './componenets/text/animatedIntroText'
+import Footer from './componenets/text/footer'
 
 function App() {
   return (
@@ -56,7 +57,8 @@ function App() {
           }
         }/>
       </div>
-    </div>
+      <Footer></Footer>
+    </div> 
   )
 }
 
