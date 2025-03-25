@@ -1,0 +1,6 @@
+.social-bar a{
+    font-size: clamp(2rem, 1.5vw, 5rem);
+    color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    margin: 0 0.4rem;
+}
