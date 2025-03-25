@@ -43,7 +43,7 @@ const blobGroup3 = [
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <>
-      <svg xmlns="http://www.w3.org/2000/svg">
+      <svg className='filter-svg' xmlns="http://www.w3.org/2000/svg">
         <defs>
           <filter id="goo">
             <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
