@@ -16,6 +16,7 @@
 .source-code {
     text-decoration: underline;
     display: inline-block;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .source-code:hover {
