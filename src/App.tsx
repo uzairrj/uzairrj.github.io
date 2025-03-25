@@ -2,6 +2,7 @@ import './App.css'
 import ProfilePicture from './componenets/image/profilePicture'
 import AnimatedIntroText from './componenets/text/animatedIntroText'
 import Footer from './componenets/text/footer'
+import SocialBar from './componenets/miscellaneous/socialBar'
 
 function App() {
   return (
@@ -57,6 +58,7 @@ function App() {
           }
         }/>
       </div>
+      <SocialBar></SocialBar>
       <Footer></Footer>
     </div> 
   )
