@@ -26,6 +26,7 @@ function NavBar() {
             className="navItemWrapper"
             onMouseEnter={() => setHoveredLink(link)}
             onMouseLeave={() => setHoveredLink(null)}
+            onClick={() => setActiveLink(link)}
           >
             {(isActive || isHovered) && (
               <motion.div
@@ -37,7 +38,6 @@ function NavBar() {
                 <a
                   href={link}
                   className={`navBarLink  ${isActive && !isDimmed ? "navBarLinkActive" : ""} ${isHovered ? "navBarLinkActive" : ""}`}
-                  onClick={() => setActiveLink(link)}
                 >
               {text}
             </a>
