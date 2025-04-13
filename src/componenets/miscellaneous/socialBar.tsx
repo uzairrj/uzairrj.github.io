@@ -1,7 +1,7 @@
 import "./socialBar.css"
 import {motion} from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faInstagram, faGithub, faKaggle, faHackerrank, faLinkedin} from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram, faGithub, faKaggle, faHackerrank, faLinkedin, faGoogleScholar} from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function SocialBar () {
@@ -27,6 +27,9 @@ function SocialBar () {
             </motion.a>
             <motion.a href="https://www.linkedin.com/in/uzairkhan42/" target="_blank" rel="noreferrer" whileHover={{scale: 1.1, color: "rgb(255, 255, 255)", transition:{duration:0.5, type:"spring", stiffness:120}}} >
                 <FontAwesomeIcon icon={faLinkedin} />
+            </motion.a>
+            <motion.a href="https://www.linkedin.com/in/uzairkhan42/" target="_blank" rel="noreferrer" whileHover={{scale: 1.1, color: "rgb(255, 255, 255)", transition:{duration:0.5, type:"spring", stiffness:120}}} >
+                <FontAwesomeIcon icon={faGoogleScholar} />
             </motion.a>
         </motion.div>
     )
