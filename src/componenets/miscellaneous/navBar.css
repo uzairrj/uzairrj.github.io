@@ -41,4 +41,14 @@
     border-radius: 6px;
     z-index: 0;
   }
+
+  .navBar-arrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    font-size: 2rem;
+    color: #eaeaea;
+    cursor: pointer ;
+  }
   
