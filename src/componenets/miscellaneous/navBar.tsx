@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import "./navBar.css";
 import { faAngleRight, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from "react-router-dom";
 
 
 const navItems = [
@@ -59,12 +60,12 @@ function NavBar() {
                 transition={{ type: "spring", stiffness: 2000, damping: 10, mass: 0.1}}
               />
             )}
-                <a
-                  href={link}
+                <Link
+                  to={link}
                   className={`navBarLink  ${isActive && !isDimmed ? "navBarLinkActive" : ""} ${isHovered ? "navBarLinkActive" : ""}`}
                 >
               {text}
-            </a>
+            </Link>
           </div>
         );
       })}
