@@ -3,13 +3,11 @@
     overflow: hidden;
     border: 3.5px white solid;
     background-color: black;
-    width: 10vh;
-    height: 10vh;
 }
 
 .profile-image {
     display: block;
-    transform: translateY(40px);
+    transform: translateY(20%);
     width: 100%;
 
 }
