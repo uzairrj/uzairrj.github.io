@@ -1,0 +1,74 @@
+.education-container {
+  padding: 20px;
+  flex-direction: row;
+  flex: 1;
+  display: flex;
+  width: 70%;
+}
+
+.education-navbar {
+  margin-bottom: 20px;
+  border-right: 3px solid #ffffff;
+  text-align: right;
+}
+
+.education-navbar-list {
+  list-style-type: none;
+  padding: 0;
+  margin-right: 10px;
+  font-size: 1.8rem;
+}
+
+/* .education-navbar-list li {
+  margin: 15px 0;
+} */
+
+.education-title {
+    padding: 0px;
+    margin: 0px 30px;
+    font-size: 2rem;
+}
+
+.education-institution {
+    padding: 0px;
+    margin: 0px 30px;
+    font-size: 0.8rem;
+    font-weight: 200;
+    line-height: 0.25rem;
+    font-style: italic;
+}
+
+.education-date {
+    padding: 0px;
+    margin: 0px 30px;
+    font-size: 0.8rem;
+    font-weight: 200;
+
+    font-style: italic;
+}
+
+.education-description{
+    padding: 0px;
+    margin: 0px 30px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: justify;
+}
+
+
+.education-navbar-link  { 
+  text-decoration: none;
+  color: #ffffff;
+  position: relative; 
+  display: inline-block; 
+  padding-bottom: 3px;
+}
+
+.underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: #ffffff;
+  width: 0%;
+}
