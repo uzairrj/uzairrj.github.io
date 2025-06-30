@@ -4,7 +4,7 @@ import NavBar from './componenets/miscellaneous/navBar'
 import Home from './pages/home'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Education from './pages/education'
-import Header from './componenets/miscellaneous/header'
+import PageContainer from './componenets/miscellaneous/pageContainer'
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <div style={{flex:1, width:"100%"}}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/education" element={<Header><Education /></Header>} />
+            <Route path="/education" element={<PageContainer><Education /></PageContainer>} />
           </Routes>
         </div>
         <NavBar />
