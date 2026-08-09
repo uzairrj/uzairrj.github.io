@@ -1,5 +1,5 @@
 import './App.css'
-import NavBar from './componenets/miscellaneous/navBar'
+import VerticalNav from './componenets/miscellaneous/verticalNav'
 import Home from './pages/home'
 import Education from './pages/education'
 import Experience from './pages/experience'
@@ -12,15 +12,15 @@ import Skills from './pages/skills'
 function App() {
   return (
     <div className="center-container">
-      <NavBar />
-      <div id="section-home">        <Home />        </div>
-      <div id="section-education">   <Education />   </div>
-      <div id="section-experience">  <Experience />  </div>
-      <div id="section-teaching">    <Teaching />    </div>
-      <div id="section-publications"><Publications /></div>
-      <div id="section-reviewer">    <Reviewer />    </div>
-      <div id="section-honors">      <Honors />      </div>
-      <div id="section-skills">      <Skills />      </div>
+      <VerticalNav />
+      <div id="section-home">         <Home />         </div>
+      <div id="section-education">    <Education />    </div>
+      <div id="section-experience">   <Experience />   </div>
+      <div id="section-teaching">     <Teaching />     </div>
+      <div id="section-publications"> <Publications /> </div>
+      <div id="section-reviewer">     <Reviewer />     </div>
+      <div id="section-honors">       <Honors />       </div>
+      <div id="section-skills">       <Skills />       </div>
     </div>
   )
 }

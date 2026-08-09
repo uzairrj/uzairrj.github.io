@@ -6,13 +6,21 @@ type SectionHeaderProps = { num: string; title: string };
 export function SectionHeader({ num, title }: SectionHeaderProps) {
   return (
     <div className="section-header">
-      <span className="section-num">{num}</span>
+      <motion.span
+        className="section-num"
+        initial={{ fontSize: '13px' }}
+        whileInView={{ fontSize: '48px' }}
+        viewport={{ once: false, margin: '-15% 0px -15% 0px' }}
+        transition={{ duration: 0.5, ease: 'easeOut' }}
+      >
+        {num}
+      </motion.span>
       <motion.h2
         className="section-title"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ y: 16 }}
+        whileInView={{ y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.45, ease: 'easeOut' }}
       >
         {title}
       </motion.h2>
