@@ -1,29 +1,52 @@
 .navBar {
     display: flex;
-    justify-content: center;
-    width: 100%;
+    flex-wrap: nowrap;
+    position: fixed;
+    top: 1.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background: rgba(30, 30, 30, 0.55);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-radius: 14px;
+    padding: 5px 6px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.35);
+    border: 1px solid rgba(255,255,255,0.08);
+    white-space: nowrap;
+    max-width: calc(100vw - 2rem);
+    overflow-x: auto;
+    scrollbar-width: none;
   }
-  
+
+  .navBar::-webkit-scrollbar { display: none; }
+
   .navItemWrapper {
     position: relative;
-    padding: 5px 10px;
+    padding: 7px 14px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    flex-shrink: 0;
   }
   
   .navBarLink {
     text-decoration: none;
-    color: #eaeaea;
-    font-size: 0.9rem;
+    color: rgba(234,234,234,0.75);
+    font-size: 0.88rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
     position: relative;
     z-index: 1;
     display: inline-block;
+    transition: color 0.15s ease;
+    user-select: none;
   }
   
   .navBarLinkActive {
-    color: #2d2d2d;
+    color: #1a1a1a;
+    font-weight: 600;
   }
 
   
@@ -33,18 +56,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #dfdfdf;
-    border-radius: 6px;
+    background-color: #e8e8e8;
+    border-radius: 8px;
     z-index: 0;
   }
-
-  .navBar-arrows {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 10px;
-    font-size: 2rem;
-    color: #eaeaea;
-    cursor: pointer ;
-  }
-  

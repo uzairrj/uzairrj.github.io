@@ -1,0 +1,14 @@
+:root {
+  --accent: #ffff56;
+  --text-primary: #eaeaea;
+  --text-muted: rgba(234, 234, 234, 0.5);
+  --text-dimmed: rgba(234, 234, 234, 0.4);
+  --text-faint: rgba(234, 234, 234, 0.3);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --section-padding: 56px 88px 72px;
+  --section-num-font: ui-monospace, Menlo, monospace;
+  --section-num-size: 13px;
+  --section-title-size: 30px;
+  --left-col-width: 150px;
+  --rail-gap: 28px;
+}

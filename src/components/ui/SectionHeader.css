@@ -1,0 +1,20 @@
+.section-header {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.section-num {
+  font-family: var(--section-num-font);
+  font-size: var(--section-num-size);
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.section-title {
+  margin: 0;
+  font-size: var(--section-title-size);
+  font-weight: 700;
+  color: var(--text-primary);
+}

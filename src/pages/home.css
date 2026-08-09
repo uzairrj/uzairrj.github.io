@@ -1,8 +1,32 @@
 .home-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    gap: 5rem;
+    min-height: 100vh;
     width: 100%;
+    padding: 2rem 8vw;
+    box-sizing: border-box;
+}
+
+.home-container .intro-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.intro-paragraph {
+    font-size: clamp(1.1rem, 1.8vw, 1.6rem);
+    line-height: 1.75;
+    color: #d4d4d4;
+    text-align: left;
+    margin: 0;
+}
+
+.intro-name {
+    color: #ffff56;
+    font-weight: 600;
 }

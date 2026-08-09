@@ -1,90 +1,92 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import "./navBar.css";
-import { faAngleRight, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link } from "react-router-dom";
-
 
 const navItems = [
-  { text: "Home", link: "/" },
-  { text: "Education", link: "/education" },
-  { text: "Experience", link: "/experience" },
-  { text: "Publications", link: "/publications" },
+  { text: "Home",        id: "section-home" },
+  { text: "Education",   id: "section-education" },
+  { text: "Experience",  id: "section-experience" },
+  { text: "Teaching",    id: "section-teaching" },
+  { text: "Publications",id: "section-publications" },
+  { text: "Reviewer",    id: "section-reviewer" },
+  { text: "Honours",     id: "section-honors" },
+  { text: "Skills",      id: "section-skills" },
 ];
 
-const arrowsAnimation = {
-    scale: 1.5, 
-    transition:{duration:0.7, type:"spring", stiffness:120}
+function scrollToSection(id: string) {
+  const el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 }
 
 function NavBar() {
-  const [activeLink, setActiveLink] = useState("/education"); // Default active link
-  const [hoveredLink, setHoveredLink] = useState<string | null>(null);
+  const [activeId, setActiveId] = useState("section-home");
+  const [hoveredId, setHoveredId] = useState<string | null>(null);
+
+  // Track which section is in view
+  useEffect(() => {
+    const sectionIds = navItems.map((n) => n.id);
+    const observers: IntersectionObserver[] = [];
+
+    const latestVisible: Record<string, number> = {};
+
+    sectionIds.forEach((id) => {
+      const el = document.getElementById(id);
+      if (!el) return;
+      const obs = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            latestVisible[id] = entry.intersectionRatio;
+            // Pick the section with the highest ratio
+            const best = Object.entries(latestVisible).sort(
+              (a, b) => b[1] - a[1]
+            )[0];
+            if (best && best[1] > 0) setActiveId(best[0]);
+          });
+        },
+        { threshold: [0, 0.1, 0.25, 0.5], rootMargin: "-10% 0px -10% 0px" }
+      );
+      obs.observe(el);
+      observers.push(obs);
+    });
+
+    return () => observers.forEach((o) => o.disconnect());
+  }, []);
 
   return (
     <nav className="navBar">
-     <motion.a className="navBar-arrows" target="_blank" rel="noreferrer" 
-        whileHover={arrowsAnimation} 
-        onClick={() => {
-            let currentActiveLinkIndex = navItems.findIndex((item => item.link === activeLink)) 
-
-            if (currentActiveLinkIndex === 0) {
-                setActiveLink(navItems[navItems.length - 1].link)
-            }
-            else{
-                setActiveLink(navItems[currentActiveLinkIndex - 1].link)
-            }
-
-        }}
-        >
-            <FontAwesomeIcon icon={faAngleLeft} />
-      </motion.a>
-      {navItems.map(({ text, link }) => {
-        const isActive = link === activeLink;
-        const isHovered = link === hoveredLink;
-        const isDimmed = hoveredLink && !isHovered;
+      {navItems.map(({ text, id }) => {
+        const isActive = id === activeId;
+        const isHovered = id === hoveredId;
+        const showBg = isActive || isHovered;
 
         return (
           <div
-            key={link}
+            key={id}
             className="navItemWrapper"
-            onMouseEnter={() => setHoveredLink(link)}
-            onMouseLeave={() => setHoveredLink(null)}
-            onClick={() => setActiveLink(link)}
+            onMouseEnter={() => setHoveredId(id)}
+            onMouseLeave={() => setHoveredId(null)}
+            onClick={() => {
+              setActiveId(id);
+              scrollToSection(id);
+            }}
           >
-            {(isActive || isHovered) && (
+            {showBg && (
               <motion.div
                 layoutId="navBackground"
                 className="navBarItemBackground"
-                transition={{ type: "spring", stiffness: 2000, damping: 10, mass: 0.1}}
+                transition={{ type: "spring", stiffness: 2000, damping: 10, mass: 0.1 }}
               />
             )}
-                <Link
-                  to={link}
-                  className={`navBarLink  ${isActive && !isDimmed ? "navBarLinkActive" : ""} ${isHovered ? "navBarLinkActive" : ""}`}
-                >
+            <span
+              className={`navBarLink ${isActive && !isHovered ? "navBarLinkActive" : ""} ${isHovered ? "navBarLinkActive" : ""}`}
+            >
               {text}
-            </Link>
+            </span>
           </div>
         );
       })}
-      <motion.a className="navBar-arrows" target="_blank" rel="noreferrer" 
-      whileHover={arrowsAnimation} 
-      onClick={() => {
-        let currentActiveLinkIndex = navItems.findIndex((item => item.link === activeLink)) 
-
-        if (currentActiveLinkIndex === navItems.length - 1) {
-            setActiveLink(navItems[0].link)
-        }
-        else{
-            setActiveLink(navItems[currentActiveLinkIndex + 1].link)
-        }
-
-        }}
-        >
-            <FontAwesomeIcon icon={faAngleRight} />
-      </motion.a>
     </nav>
   );
 }

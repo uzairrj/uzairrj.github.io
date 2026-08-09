@@ -1,25 +1,27 @@
 import './App.css'
-import Footer from './componenets/text/footer'
 import NavBar from './componenets/miscellaneous/navBar'
 import Home from './pages/home'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Education from './pages/education'
-import PageContainer from './componenets/miscellaneous/pageContainer'
+import Experience from './pages/experience'
+import Teaching from './pages/teaching'
+import Publications from './pages/publications'
+import Reviewer from './pages/reviewer'
+import Honors from './pages/honors'
+import Skills from './pages/skills'
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="center-container">
-        <div style={{flex:1, width:"100%"}}>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/education" element={<PageContainer><Education /></PageContainer>} />
-          </Routes>
-        </div>
-        <NavBar />
-        <Footer />
-      </div>
-    </BrowserRouter>  
+    <div className="center-container">
+      <NavBar />
+      <div id="section-home">        <Home />        </div>
+      <div id="section-education">   <Education />   </div>
+      <div id="section-experience">  <Experience />  </div>
+      <div id="section-teaching">    <Teaching />    </div>
+      <div id="section-publications"><Publications /></div>
+      <div id="section-reviewer">    <Reviewer />    </div>
+      <div id="section-honors">      <Honors />      </div>
+      <div id="section-skills">      <Skills />      </div>
+    </div>
   )
 }
 

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "phd",
+    "date": "Sep 2023 – Sep 2026",
+    "title": "Ph.D. in Artificial Intelligence",
+    "subtitle": "University of Verona · Verona, Italy",
+    "description": "Thesis: Optimizing Industrial Operations via Foundation Models — Integrating Time-Series Predictive Maintenance and Zero-Shot Visual Quality Control. Research focuses on improving industrial operations through advanced deep learning: predictive maintenance using time-series data, zero-shot anomaly detection for automated quality inspection, and efficient Foundation Model solutions deployable on embedded devices."
+  },
+  {
+    "id": "msc",
+    "date": "Aug 2021 – Jun 2023",
+    "title": "Master's in Computer Engineering for Robotics and Smart Industries",
+    "subtitle": "University of Verona · Verona, Italy · Grade: 108/110",
+    "description": "Thesis: Deep Learning for Indoor Human Trajectory Prediction: A Generative Modeling Approach. Presented a novel approach to human trajectory prediction in indoor environments, focusing on shoppers' movement in supermarkets. Leveraged conditional variational autoencoders and integrated time-series data preprocessing to improve temporal continuity, resulting in a peer-reviewed publication."
+  },
+  {
+    "id": "bsc",
+    "date": "Apr 2015 – Jul 2019",
+    "title": "Bachelor's in Computer Science",
+    "subtitle": "COMSATS University Islamabad · Islamabad, Pakistan · GPA: 3.54/4.0",
+    "description": "Thesis: LiveVision AR — Real-Time Segmentation and Enhancement for Immersive Environments. Utilized C# and EMGUCV for real-time image segmentation and enhancement, integrating real-world objects into 3D augmented environments by isolating and enhancing them from live video feeds."
+  }
+]

@@ -1,6 +1,29 @@
+.social-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 .social-bar a{
-    font-size: clamp(2rem, 1.5vw, 5rem);
+    font-size: clamp(1.4rem, 1.5vw, 2rem);
     color: rgba(255, 255, 255, 0.8);
     display: inline-block;
-    margin: 0 0.4rem;
+    margin: 0 0.2rem;
+}
+
+.cv-button {
+    display: flex !important;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem !important;
+    color: #1a1a1a !important;
+    background-color: #ffff56;
+    border: none;
+    border-radius: 8px;
+    padding: 0.4rem 0.9rem;
+    text-decoration: none;
+    margin-right: 0.8rem !important;
+    white-space: nowrap;
+    cursor: pointer;
 }

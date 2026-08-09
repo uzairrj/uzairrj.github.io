@@ -1,0 +1,50 @@
+.skills-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.skills-row {
+  display: flex;
+  gap: var(--rail-gap);
+  align-items: flex-start;
+}
+
+.skills-cat-label {
+  width: var(--left-col-width);
+  flex: none;
+  font-family: var(--section-num-font);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--text-dimmed);
+  padding-top: 7px;
+  text-align: right;
+}
+
+.skills-pills {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  border-left: 1px solid var(--border-subtle);
+  padding-left: var(--rail-gap);
+}
+
+.skills-pill {
+  font-size: 13px;
+  color: rgba(234, 234, 234, 0.8);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  padding: 5px 12px;
+  transition: border-color 0.2s, background 0.2s, color 0.2s;
+  cursor: default;
+}
+
+.skills-pill:hover {
+  background: rgba(255, 255, 86, 0.08);
+  border-color: rgba(255, 255, 86, 0.3);
+  color: var(--accent);
+}
