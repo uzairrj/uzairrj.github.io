@@ -1,0 +1,12 @@
+{
+  "conferences": [
+    { "id": "cvpr", "name": "Computer Vision and Pattern Recognition (CVPR)", "org": "CVF / IEEE" },
+    { "id": "neurips", "name": "Conference on Neural Information Processing Systems (NeurIPS)", "org": "NeurIPS Foundation" },
+    { "id": "bmvc", "name": "British Machine Vision Conference (BMVC)", "org": "British Machine Vision Association" },
+    { "id": "iccv", "name": "International Conference on Computer Vision (ICCV)", "org": "CVF / IEEE" }
+  ],
+  "journals": [
+    { "id": "asc", "name": "Applied Soft Computing", "org": "Elsevier" },
+    { "id": "ieee-sensors", "name": "IEEE Sensors Letters", "org": "IEEE" }
+  ]
+}

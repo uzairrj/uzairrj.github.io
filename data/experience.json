@@ -1,0 +1,34 @@
+[
+  {
+    "id": "donatoni",
+    "date": "Oct 2023 – Oct 2026",
+    "title": "Research Assistant",
+    "subtitle": "Donatoni Macchine S.r.l. · Verona, Italy",
+    "bullets": [
+      "Developed and deployed AI predictive maintenance models on real-world stone-cutting machines, achieving over 90% accuracy to significantly minimize downtime and reduce maintenance costs.",
+      "Engineered end-to-end IoT data pipelines and interactive dashboards, ensuring high-quality data collection, real-time performance visualization, and seamless model scalability in production environments.",
+      "Bridged academic research and industry through an industrial Ph.D., successfully translating cutting-edge machine learning concepts into robust, deployable solutions."
+    ]
+  },
+  {
+    "id": "visionem",
+    "date": "Aug 2024 – Jan 2025",
+    "title": "Research Assistant",
+    "subtitle": "Visione M · Verona, Italy",
+    "bullets": [
+      "Tested and adapted the Segment Anything Model (SAM) to accurately separate walls, furniture, and objects in cluttered spaces using learnable prompts.",
+      "Designed a custom computer vision algorithm that changes surface colors while naturally preserving the original lighting and shadows."
+    ]
+  },
+  {
+    "id": "qualyco",
+    "date": "Feb 2026 – Apr 2026",
+    "title": "Research Assistant",
+    "subtitle": "Qualyco · Verona, Italy",
+    "bullets": [
+      "Developed machine learning models to accurately predict gas and liquid flow rates from sensor data.",
+      "Analyzed over 110,000 sensor readings to identify the most important variables and patterns for predictions.",
+      "Compared AI models against traditional physical models and proposed physics-informed neural networks to combine physical rules with data for improved accuracy."
+    ]
+  }
+]

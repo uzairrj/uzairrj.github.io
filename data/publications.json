@@ -1,0 +1,56 @@
+[
+  {
+    "id": "pub1",
+    "authors": "U. Khan, D. S. Cheng, F. Setti, F. Fummi, M. Cristani, and L. Capogrosso",
+    "title": "A comprehensive survey on deep learning-based predictive maintenance",
+    "venue": "ACM Transactions on Embedded Computing Systems",
+    "details": "vol. 25, no. 2, pp. 1–43",
+    "year": "2026",
+    "status": "published"
+  },
+  {
+    "id": "pub2",
+    "authors": "U. Khan, L. Capogrosso, F. Biondani, M. Magno, F. Fummi, F. Setti, and M. Cristani",
+    "title": "ChronosAD: Leveraging Time Series Foundation Models for Accurate Anomaly Detection",
+    "venue": "24th IEEE International Conference on Industrial Informatics (INDIN)",
+    "details": "",
+    "year": "2026",
+    "status": "accepted"
+  },
+  {
+    "id": "pub3",
+    "authors": "U. Khan, F. Fummi, and L. Capogrosso",
+    "title": "KairosAD: A SAM-Based Model for Industrial Anomaly Detection on Embedded Devices",
+    "venue": "International Conference on Image Analysis and Processing",
+    "details": "pp. 42–53",
+    "year": "2025",
+    "status": "published"
+  },
+  {
+    "id": "pub4",
+    "authors": "U. Khan, L. Capogrosso, M. Aqeel, F. Setti, M. Magno, and M. Cristani",
+    "title": "LiZAD: A Lightweight Zero-Shot Anomaly Detection Framework for Industrial Manufacturing",
+    "venue": "IEEE International Conference on Omni-Layer Intelligent Systems (COINS)",
+    "details": "",
+    "year": "2026",
+    "status": "accepted"
+  },
+  {
+    "id": "pub5",
+    "authors": "M. Aqeel, M. Nazir, U. Khan, M. Cristani, and F. Setti",
+    "title": "Anomaly-Aware Vision-Language Adapters for Zero-Shot Anomaly Detection",
+    "venue": "IEEE International Conference on Image Processing (ICIP)",
+    "details": "",
+    "year": "2026",
+    "status": "accepted"
+  },
+  {
+    "id": "pub6",
+    "authors": "L. Capogrosso, A. Toaiari, A. Avogaro, U. Khan, A. Jivoji, F. Fummi, and M. Cristani",
+    "title": "SITUATE: Indoor Human Trajectory Prediction Through Geometric Features and Self-supervised Vision Representation",
+    "venue": "International Conference on Pattern Recognition",
+    "details": "pp. 364–379",
+    "year": "2024",
+    "status": "published"
+  }
+]
