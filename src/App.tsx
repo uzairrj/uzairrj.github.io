@@ -8,6 +8,7 @@ import Publications from './pages/publications'
 import Reviewer from './pages/reviewer'
 import Honors from './pages/honors'
 import Skills from './pages/skills'
+import Footer from './componenets/text/footer'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <div id="section-reviewer">     <Reviewer />     </div>
       <div id="section-honors">       <Honors />       </div>
       <div id="section-skills">       <Skills />       </div>
+      <Footer />
     </div>
   )
 }
