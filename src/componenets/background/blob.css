@@ -1,10 +1,15 @@
-.blob-container{
+.blob-container {
     position: absolute;
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
 }
 
 .blob {
     position: absolute;
     border-radius: 50%;
-    opacity: 0.7;
+    opacity: 0.38;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    will-change: transform;
 }
-
