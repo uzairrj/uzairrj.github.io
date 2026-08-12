@@ -22,3 +22,9 @@
   display: inline-block;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 20px;
+  }
+}

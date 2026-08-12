@@ -30,3 +30,22 @@
     color: #ffff56;
     font-weight: 600;
 }
+
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 6rem 20px 3rem;
+    min-height: auto;
+    text-align: center;
+  }
+
+  .home-container .intro-text {
+    align-items: center;
+  }
+
+  .intro-paragraph {
+    text-align: center;
+    font-size: 1.15rem;
+  }
+}

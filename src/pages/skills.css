@@ -48,3 +48,21 @@
   border-color: rgba(255, 255, 86, 0.3);
   color: var(--accent);
 }
+
+@media (max-width: 768px) {
+  .skills-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .skills-cat-label {
+    width: auto;
+    text-align: left;
+    padding-top: 0;
+  }
+
+  .skills-pills {
+    border-left: none;
+    padding-left: 0;
+  }
+}

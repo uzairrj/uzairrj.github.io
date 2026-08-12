@@ -85,3 +85,28 @@
   color: rgba(234, 234, 234, 0.65);
   line-height: 1.65;
 }
+
+@media (max-width: 768px) {
+  .tl-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .tl-date {
+    width: auto;
+    text-align: left;
+    padding-top: 0;
+  }
+
+  .tl-rail {
+    display: none;
+  }
+
+  .tl-title {
+    font-size: 17px;
+  }
+
+  .tl-desc {
+    text-align: left;
+  }
+}

@@ -56,3 +56,24 @@
   color: var(--text-faint);
   font-style: italic;
 }
+
+@media (max-width: 768px) {
+  .rev-group-label {
+    padding-left: 0;
+  }
+
+  .rev-item {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .rev-num {
+    width: auto;
+    text-align: left;
+  }
+
+  .rev-body {
+    border-left: none;
+    padding-left: 0;
+  }
+}

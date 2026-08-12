@@ -108,3 +108,52 @@
   padding: 4px 10px;
   pointer-events: none;
 }
+
+/* ── Mobile Viewport ─────────────────────────────────── */
+@media (max-width: 768px) {
+  .vnav {
+    left: 50%;
+    top: 12px;
+    transform: translateX(-50%);
+    flex-direction: row;
+    padding: 8px 16px;
+    border-radius: 30px;
+    gap: 8px;
+    max-width: calc(100vw - 24px);
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .vnav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .vnav-monogram {
+    margin-bottom: 0;
+    margin-right: 4px;
+    writing-mode: horizontal-tb;
+    transform: none;
+    font-size: 13px;
+  }
+
+  .vnav-rail {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .vnav-stop {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .vnav-line {
+    width: 12px;
+    height: 1px;
+  }
+
+  .vnav-tooltip {
+    left: 50%;
+    top: 24px;
+    transform: translateX(-50%);
+  }
+}

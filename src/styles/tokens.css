@@ -12,3 +12,12 @@
   --left-col-width: 150px;
   --rail-gap: 28px;
 }
+
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 40px 20px 48px;
+    --left-col-width: 90px;
+    --rail-gap: 16px;
+    --section-title-size: 24px;
+  }
+}

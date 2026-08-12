@@ -71,3 +71,21 @@
   border: 1px solid rgba(255, 255, 86, 0.25);
   vertical-align: middle;
 }
+
+@media (max-width: 768px) {
+  .pub-item {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .pub-num {
+    width: auto;
+    text-align: left;
+    padding-top: 0;
+  }
+
+  .pub-body {
+    border-left: none;
+    padding-left: 0;
+  }
+}
