@@ -1,14 +1,14 @@
 [
   {
     "id": "ta-univr",
-    "date": "Oct 2023 – Oct 2026",
+    "date": "10/2023 -- 10/2026",
     "title": "Teaching Assistant",
     "subtitle": "Università degli Studi di Verona · Verona, Italy",
     "bullets": [
-      "Deep Learning (2023/2024) — Master's in Artificial Intelligence",
-      "Fundamentals of Machine Learning (2023/2024) — Master's in Artificial Intelligence",
-      "Advanced Deep Learning (2024/2025) — Master's in Artificial Intelligence",
-      "Computer Vision (2025/2026) — Master's in Artificial Intelligence"
+      "Deep Learning (2023/2024) for Master's in Artificial Intelligence.",
+      "Fundamentals of Machine Learning (2023/2024) for Master's in Artificial Intelligence.",
+      "Advanced Deep Learning (2024/2025) for Master's in Artificial Intelligence.",
+      "Computer Vision (2025/2026) for Master's in Artificial Intelligence."
     ]
   }
 ]
