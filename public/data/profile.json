@@ -7,7 +7,7 @@
     { "id": "email",     "label": "Email",          "icon": "envelope",       "href": "mailto:uzair.khan@univr.it" },
     { "id": "linkedin",  "label": "LinkedIn",        "icon": "linkedin",       "href": "https://www.linkedin.com/in/uzairkhan42/" },
     { "id": "github",    "label": "GitHub",          "icon": "github",         "href": "https://github.com/uzairrj" },
-    { "id": "scholar",   "label": "Google Scholar",  "icon": "google-scholar", "href": "https://scholar.google.com/citations?user=uzairrj" },
+    { "id": "scholar",   "label": "Google Scholar",  "icon": "google-scholar", "href": "https://scholar.google.com/citations?user=PAsg9gsAAAAJ&hl=en" },
     { "id": "kaggle",    "label": "Kaggle",          "icon": "kaggle",         "href": "https://www.kaggle.com/uzairrj" },
     { "id": "hackerrank","label": "HackerRank",      "icon": "hackerrank",     "href": "https://www.hackerrank.com/uzairrj" }
   ]

@@ -1,7 +1,6 @@
 [
-  { "id": "languages", "category": "Programming Languages", "items": ["Python", "C", "C++", "MATLAB"] },
-  { "id": "frameworks", "category": "Frameworks & Libraries", "items": ["PyTorch", "TensorFlow", "OpenCV", "ONNX", "NumPy", "Pandas", "Matplotlib", "Seaborn", "Plotly"] },
+  { "id": "languages", "category": "Programming Languages", "items": ["Python", "C/C++", "MATLAB"] },
   { "id": "databases", "category": "Databases", "items": ["MongoDB", "MySQL", "PostgreSQL", "MariaDB", "InfluxDB"] },
-  { "id": "tools", "category": "Tools & Platforms", "items": ["Grafana", "Docker", "Git", "Linux"] },
-  { "id": "research", "category": "Research Domains", "items": ["Vision-Language Models", "Foundation Models", "Predictive Maintenance", "Anomaly Detection", "Embedded AI", "Efficient AI", "Computer Vision", "Time-Series Analysis"] }
+  { "id": "frameworks", "category": "Frameworks", "items": ["PyTorch", "OpenCV", "TensorFlow", "Matplotlib", "ONNX", "Seaborn", "Grafana", "Plotly", "NumPy", "Pandas"] },
+  { "id": "research", "category": "Research Domain", "items": ["Vision-Language Models", "Foundation Models", "Predictive Maintenance", "Anomaly Detection", "Embedded AI", "Efficient AI"] }
 ]
