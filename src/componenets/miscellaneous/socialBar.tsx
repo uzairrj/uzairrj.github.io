@@ -1,5 +1,6 @@
 import "./socialBar.css";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -39,10 +40,10 @@ const hoverProps = {
 
 type SocialBarProps = {
   links: SocialLink[];
-  cvUrl: string;
+  cvUrl?: string;
 };
 
-function SocialBar({ links, cvUrl }: SocialBarProps) {
+function SocialBar({ links }: SocialBarProps) {
   return (
     <motion.div
       className="social-bar"
@@ -50,15 +51,14 @@ function SocialBar({ links, cvUrl }: SocialBarProps) {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      <motion.a
-        href={cvUrl}
-        download
-        className="cv-button"
+      <motion.div
         whileHover={{ scale: 1.05, transition: { duration: 0.3, type: "spring", stiffness: 200 } }}
       >
-        <FontAwesomeIcon icon={faDownload} />
-        Download CV
-      </motion.a>
+        <Link to="/cv" className="cv-button">
+          <FontAwesomeIcon icon={faDownload} />
+          Download CV
+        </Link>
+      </motion.div>
 
       {links.map(({ id, icon, href, label }) => {
         const faIcon = ICON_MAP[icon];

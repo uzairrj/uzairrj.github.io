@@ -1,5 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { HashRouter } from 'react-router-dom'
 import './index.css'
 import {Blob} from './componenets/background/blob'
 import App from './App'
@@ -76,9 +77,9 @@ createRoot(document.getElementById('root')!).render(
         <Blob blobs={blobGroup6} top={'75%'} right={'8vw'} />
         <Blob blobs={blobGroup7} top={'92%'} left={'52%'} />
       </div>
-      <div className="content">
+      <HashRouter>
         <App />
-      </div>
+      </HashRouter>
     </>
   </StrictMode>,
 )
