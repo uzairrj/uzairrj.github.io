@@ -22,6 +22,16 @@ function VerticalNav() {
   const [hoveredId, setHoveredId] = useState<string | null>(null);
 
   useEffect(() => {
+    const activeItem = NAV_ITEMS.find((item) => item.id === activeId);
+    if (activeItem) {
+      let pageName = activeItem.label;
+      if (activeId === 'section-experience') pageName = 'Research Experience';
+      if (activeId === 'section-reviewer') pageName = 'Reviewer Experience';
+      document.title = `Uzair Khan - ${pageName}`;
+    }
+  }, [activeId]);
+
+  useEffect(() => {
     const ratios: Record<string, number> = {};
 
     const observers = NAV_ITEMS.map(({ id }) => {

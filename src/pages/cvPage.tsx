@@ -98,6 +98,10 @@ function CvPage() {
   const [pages, setPages] = useState<string[]>([]);
   const [isLayoutReady, setIsLayoutReady] = useState(false);
 
+  useEffect(() => {
+    document.title = 'Uzair Khan - Curriculum Vitae';
+  }, []);
+
   // Dynamic layout bin-packing manager based on browser DOM heights
   useEffect(() => {
     let active = true;
